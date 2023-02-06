@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-01-29T04:13:08.000Z</updated>
+  <updated>2023-02-06T15:07:11.728Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>termux部署hexo</title>
+    <link href="http://example.com/posts/4135bb67.html"/>
+    <id>http://example.com/posts/4135bb67.html</id>
+    <published>2023-02-06T15:07:11.728Z</published>
+    <updated>2023-02-06T15:07:11.728Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="无root纯手机搭建hexo教程"><a href="#无root纯手机搭建hexo教程" class="headerlink" title="无root纯手机搭建hexo教程"></a>无root纯手机搭建hexo教程</h1><p>这是我入坑的hexo的第一天，下面说一下我用手机无root搭建hexo的过程.</p><blockquote><p>本文章仅说明本地部署美化即部署到github请移步到下一遍博客</p></blockquote><ol><li>我们首先下载Zerotermux这个软件更换源我们切换成北京源或者清华源.</li><li>安装nodejs  vim编辑器 git 这些必要的插件<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install nodejs-lts</span><br></pre></td></tr></table></figure>这个命令用于安装nodejs<br>安装nodejs后输入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install vim &amp;&amp; git</span><br></pre></td></tr></table></figure>这样可以两个一起安装不用那么麻烦</li><li>安装完后环境就搭建完成了，我们使用npm来下载我们的hexo输入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li><li>下载完后初始化一下hexo<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>hexo init (我是你的文件名你可以随便起)<br>安装完后我们进入初始化的文件夹<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>进入后npm install一下<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>ok到了这里我们的本地部署就到了尾声<br>我们hexo 三件套一下就可以在本地访问我们的博客了<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>我们在浏览器输入<code>http://localhost:4000/</code>即可访问我们的博客。</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;无root纯手机搭建hexo教程&quot;&gt;&lt;a href=&quot;#无root纯手机搭建hexo教程&quot; class=&quot;headerlink&quot; title=&quot;无root纯手机搭建hexo教程&quot;&gt;&lt;/a&gt;无root纯手机搭建hexo教程&lt;/h1&gt;&lt;p&gt;这是我入坑的hexo的第一天</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -29,26 +49,6 @@
       
       
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>termux部署hexo</title>
-    <link href="http://example.com/posts/4135bb67.html"/>
-    <id>http://example.com/posts/4135bb67.html</id>
-    <published>2023-02-06T13:43:49.262Z</published>
-    <updated>2023-01-29T04:19:44.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="无root纯手机搭建hexo教程"><a href="#无root纯手机搭建hexo教程" class="headerlink" title="无root纯手机搭建hexo教程"></a>无root纯手机搭建hexo教程</h1><p>这是我入坑的hexo的第一天由于没有电脑和root的原因导致我用hexo十分的困难下面说一下我用手机无root搭建hexo的过程</p><blockquote><p>本文章仅说明本地部署美化即部署到github请移步到下一遍博客</p></blockquote><ol><li>我们首先下载Zerotermux这个软件更换源我们切换成北京源或者清华源.</li><li>安装nodejs  vim编辑器 git 这些必要的插件<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install nodejs-lts</span><br></pre></td></tr></table></figure>这个命令用于安装nodejs<br>安装nodejs后输入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install vim &amp;&amp; git</span><br></pre></td></tr></table></figure>这样可以两个一起安装不用那么麻烦</li><li>安装完后环境就搭建完成了，我们使用npm来下载我们的hexo输入<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li><li>下载完后初始化一下hexo<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>hexo init (我是你的文件名你可以随便起)<br>安装完后我们进入初始化的文件夹<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br></pre></td></tr></table></figure>进入后npm install一下<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>ok到了这里我们的本地部署就到了尾声<br>我们hexo 三件套一下就可以在本地访问我们的博客了<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo s</span><br></pre></td></tr></table></figure>我们在浏览器输入<code>http://localhost:4000/</code>即可访问我们的博客。</li></ol>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;无root纯手机搭建hexo教程&quot;&gt;&lt;a href=&quot;#无root纯手机搭建hexo教程&quot; class=&quot;headerlink&quot; title=&quot;无root纯手机搭建hexo教程&quot;&gt;&lt;/a&gt;无root纯手机搭建hexo教程&lt;/h1&gt;&lt;p&gt;这是我入坑的hexo的第一天</summary>
       
     
     
