@@ -3,11 +3,11 @@
   <title>Orange`blog</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://orange302.github.io/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://orange302.github.io/"/>
   <updated>2023-03-20T14:47:41.517Z</updated>
-  <id>http://example.com/</id>
+  <id>https://orange302.github.io/</id>
   
   <author>
     <name>Orange</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/posts/16107.html"/>
-    <id>http://example.com/posts/16107.html</id>
+    <link href="https://orange302.github.io/posts/16107.html"/>
+    <id>https://orange302.github.io/posts/16107.html</id>
     <published>2023-03-20T14:28:47.926Z</published>
     <updated>2023-03-20T14:47:41.517Z</updated>
     
