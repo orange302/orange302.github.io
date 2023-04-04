@@ -4,13 +4,19 @@
   
     
     <entry>
-      <title></title>
+      <title>test</title>
       <link href="/posts/0.html"/>
       <url>/posts/0.html</url>
       
         <content type="html"><![CDATA[<ol><li>带 <u>下划线</u> 的文本</li><li>带 <emp>着重号</emp> 的文本</li><li>带 <wavy>波浪线</wavy> 的文本</li><li>带 <del>删除线</del> 的文本</li><li>键盘样式的文本 <kbd>command</kbd> + <kbd>D</kbd></li><li>密码样式的文本：<psw>这里没有验证码</psw></li></ol><ul><li>彩色文字<br>在一段话中方便插入各种颜色的标签，包括：<span class='p red'>红色</span>、<span class='p yellow'>黄色</span>、<span class='p green'>绿色</span>、<span class='p cyan'>青色</span>、<span class='p blue'>蓝色</span>、<span class='p gray'>灰色</span>。</li><li><p>超大号文字<br>文档「开始」页面中的标题部分就是超大号文字。</p><span class='p center logo large'>Volantis</span><span class='p center small'>A Wonderful Theme for Hexo</span></li><li><p>彩色文字<br>在一段话中方便插入各种颜色的标签，包括：<p class='p red'>红色</p>、<p class='p yellow'>黄色</p>、<p class='p green'>绿色</p>、<p class='p cyan'>青色</p>、<p class='p blue'>蓝色</p>、<p class='p gray'>灰色</p>。</p></li><li>超大号文字<br>文档「开始」页面中的标题部分就是超大号文字。<p class='p center logo large'>Volantis</p><p class='p center small'>A Wonderful Theme for Hexo</p></li></ul>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
       
     </entry>
     
