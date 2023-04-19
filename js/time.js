@@ -1,1 +1,33 @@
-var now=new Date;function createtime(){var t=new Date("01/20/2023 00:00:00");now.setTime(now.getTime()+250);var e=(now-t)/1e3/60/60/24,a=Math.floor(e),n=(now-t)/1e3/60/60-24*a,r=Math.floor(n);1==String(r).length&&(r="0"+r);var s=(now-t)/1e3/60-1440*a-60*r,i=Math.floor(s);1==String(i).length&&(i="0"+i);var o=(now-t)/1e3-86400*a-3600*r-60*i,l=Math.round(o);1==String(l).length&&(l="0"+l);let g="";g=r<18&&r>=9?`<img class='boardsign' src='/img/上课.svg' title='期待下课中~'><span class='textTip'> <br> 本站居然运行了 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒 </span> <i class='fas fa-heartbeat' style='color:red'></i>`:`<img class='boardsign' src='/img/放学.svg' title='期待周末中~'><span class='textTip'> <br> 本站居然运行了 ${a} 天</span><span id='runtime'> ${r} 小时 ${i} 分 ${l} 秒 </span> <i class='fas fa-heartbeat' style='color:red'></i>`,document.getElementById("workboard")&&(document.getElementById("workboard").innerHTML=g)}setInterval((()=>{createtime()}),250);
+var now = new Date();
+
+function createtime() {
+  var targetDate = new Date("01/20/2023 00:00:00");
+  now.setTime(now.getTime() + 250);
+  var timeDiffInSec = (now - targetDate) / 1000;
+  var days = Math.floor(timeDiffInSec / 86400);
+  var hours = Math.floor((timeDiffInSec % 86400) / 3600);
+  var minutes = Math.floor((timeDiffInSec % 3600) / 60);
+  var seconds = Math.floor(timeDiffInSec % 60);
+
+  var isClassTime = (hours >= 7 && hours < 12) || (hours >= 14 && hours < 17);
+  var imgSrc = "/img/放学.svg";
+  var imgTitle = "期待周末中~";
+  var imgText = `<br> 本站居然运行了 ${days} 天</span><span id='runtime'> ${hours} 小时 ${minutes} 分 ${seconds} 秒 </span>`;
+  if (hours >= 7 && hours < 12) {
+    imgSrc = "/img/上课.svg";
+    imgTitle = "期待下课中~";
+  } else if (hours >= 14 && hours < 17) {
+    imgSrc = "/img/上课.svg";
+    imgTitle = "期待放学中~";
+  } else {
+    imgSrc = "/img/放学.svg";
+    imgTitle = "期待周末中~";
+  }
+  var imgHtml = `<img class='boardsign' src='${imgSrc}' title='${imgTitle}'><span class='textTip'> ${imgText} </span> <i class='fas fa-heartbeat' style='color:red'></i>`;
+  
+  document.getElementById("workboard") && (document.getElementById("workboard").innerHTML = imgHtml);
+}
+
+setInterval(() => {
+  createtime()
+}, 250);
